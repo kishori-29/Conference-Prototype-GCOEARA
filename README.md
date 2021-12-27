@@ -1,2 +1,3 @@
 # Event-Prototype
-making website for 1 event of GCOEARA(Under ERC)
+GCOEARA will host a conference for students to submit their research papers. The website will cater to those needs
+
