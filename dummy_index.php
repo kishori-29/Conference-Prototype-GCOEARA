@@ -23,13 +23,19 @@
 
 .logo-main {
     position: absolute;
+    /* position: fixed; */
     margin: 1%;
-    margin-top: 6px;
+    margin-top: 2px;
     margin-bottom: 2px;
+    /* font-size: 1.2rem; */
     text-shadow:
         0.06em 0.07em 0 rgb(55, 56, 4),
         0.09em 0.08em 0 rgb(173, 200, 30),
         0.08em 0.09em 0 rgb(100, 70, 225);
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+
 }
 
 .gcoeara-img {
@@ -54,16 +60,8 @@
     font-weight: 500px;
 }
 
-.logo-img1 {
-    float: right;
-}
-
-.logo-img2 {
-    float: left
-}
-
 .img2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
 }
 
@@ -73,7 +71,7 @@
 
 }
 
-@media(max-width:1200px) {
+@media(max-width:1130px) {
     .head-title {
         margin-top: 1%;
         font-weight: 500px;
@@ -87,12 +85,12 @@
     }
 
     .conference-cls {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
 
     }
 
     .img2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .gcoeara-img {
@@ -100,8 +98,8 @@
     }
 
     .sponsor-img {
-        width: 100px !important;
-        height: 30px !important;
+        width: 110px !important;
+        height: 35px !important;
 
     }
 
@@ -112,7 +110,7 @@
 
 }
 
-@media(max-width:840px) {
+@media(max-width:810px) {
     .head-title {
         font-weight: 450;
     }
@@ -123,37 +121,10 @@
 
     }
 
+
     .img2 {
-        font-size: 1.2rem;
-        font-weight: 650;
-
-    }
-
-    .conference-cls {
-        font-size: 1.4rem;
-
-    }
-
-    .gcoeara-img {
-        height: 61vh;
-    }
-
-    .sponsor-img {
-        width: 80px !important;
-        height: 30px !important;
-
-    }
-
-    .logo-img {
-        width: 100% !important;
-        height: 29% !important;
-    }
-}
-
-@media(max-width:545px) {
-    .sponsor-img {
-        width: 70px !important;
-        height: 35px !important;
+        font-size: 1.1rem;
+        font-weight: 700;
 
     }
 
@@ -163,67 +134,60 @@
     }
 
     .gcoeara-img {
-        height: 53vh;
+        height: 65vh;
     }
+
+    .sponsor-img {
+        width: 80px !important;
+        height: 30px !important;
+
+    }
+
+    .logo-img {
+        width: 92% !important;
+        height: 30% !important;
+    }
+}
+
+@media(max-width:590px) {
+    .sponsor-img {
+        width: 80px !important;
+        height: 39px !important;
+
+    }
+
+    /* .img1,
+    .img3 {
+        width: 95px !important;
+        height: 95px !important;
+    } */
 
     .img2 {
         font-size: 1rem;
-        font-weight: 645;
     }
 
     .logo-img {
         width: 100% !important;
-        height: 27% !important;
+        height: 40% !important;
     }
 }
 
-@media(max-width:438px) {
+@media(max-width:540px) {
+
+
     .img2 {
-        font-size: 0.7rem;
-        font-weight: 620;
-
-    }
-
-    .gcoeara-img {
-        height: 46vh;
-    }
-
-    .conference-cls {
         font-size: 1rem;
-
     }
 
     .sponsor-img {
-        width: 70px !important;
-        height: 25px !important;
+        width: 80px !important;
+        height: 20px !important;
 
     }
 
     .logo-img {
         width: 100% !important;
         height: 23% !important;
-    }
-}
-
-@media(max-width:310px) {
-    .img2 {
-        font-size: 0.4rem;
-        font-weight: 620;
-
-    }
-
-    .gcoeara-img {
-        height: 42vh;
-    }
-
-    .conference-cls {
-        font-size: 1rem;
-
-    }
-
-    .logo-img {
-        width: 110% !important;
-        height: 25% !important;
     }
 }
 </style>
@@ -240,27 +204,25 @@
                 </div>
                 <div class="row">
 
-                    <!-- <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1"></div> -->
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1"></div>
 
-                    <div class="img1 col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 img-responsive"> <img
-                            class="logo-img logo-img1" style="width:min(50vh, 150px)"
-                            src="images/govt-college-logo1.png" alt="" />
+                    <div class="img1 col-2 col-xl-1 col-lg-2 col-md-2 col-sm-2 img-responsive"> <img class="logo-img"
+                            style="width:min(50vh, 150px)" src="images/govt-college-logo1.png" alt="" />
                     </div>
 
-                    <div class="img2 col-xl-8 col-8 col-lg-8 col-md-8 col-sm-8 max-width:50%">
-                        <p>NCEESD 2022 <br> (Offline Conference)<br>
-                            4<sup>th</sup> & 5<sup>th</sup> July, 2022<br>
-                            Government College of Engineering
+                    <div class="img2 col-xl-8 col-6 col-lg-6 col-md-6 col-sm-6 max-width:50%">
+                        <p>NCEESD 2022 <br> (Offline Conference)</p>
+                        <p>4<sup>th</sup> & 5<sup>th</sup> July, 2022</p>
+                        <p>Government College of Engineering
                             and Research Avasari (kh), Taluka-Ambegaon, District: Pune-412405,
                             India
                         </p>
                         <p class="sponsor-heading">Sponsored by</p>
                     </div>
 
-                    <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 img3"> <img
-                            class="logo-img img-responsive logo-img2" style="width:min(30vh, 150px)"
-                            src="images/govt-logo2.png" alt="" /></div>
-                    <!-- <div class="col-1 col-lg-1 col-xl-1 col-md-1 col-sm-1"></div> -->
+                    <div class="col-2 col-xl-1 col-lg-2 col-md-2 col-sm-2 img3"> <img class="logo-img img-responsive"
+                            style="width:min(30vh, 150px)" src="images/govt-logo2.png" alt="" /></div>
+                    <div class="col-1 col-lg-1 col-xl-1 col-md-1 col-sm-1"></div>
 
                 </div>
                 <!-- sponsor images -->
@@ -288,6 +250,8 @@
     </div>
 
 
-    <?php 
-    include "includes/navigation.php";
-    ?>
+    <!-- <?php include "includes/navigation.php";?> -->
+
+</body>
+
+</html>

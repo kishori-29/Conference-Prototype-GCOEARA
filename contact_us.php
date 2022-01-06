@@ -1,181 +1,255 @@
 <?php include "index.php"; ?>
+<!-- <link rel="stylesheet" href="css/committee.css"> -->
 <style>
 .heading {
-    color: black;
     border: 0px solid black;
-    margin: 20px 20px;
-    height: 10vh;
+    color: crimson;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 0px;
+    margin: auto;
+    background-color: #e6e6ff;
+    font-weight: 750;
+    width: 49%;
+    font-size: 35px;
+}
+
+.content1 {
     width: 65%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    margin: auto;
+}
+
+.card-left>div {
+    color: black;
+    font-weight: 500 !important;
+    font-size: 17px;
+}
+
+.card-left>.title {
+    color: #5c5cf2;
     font-weight: 500;
-    font-size: 1.5rem;
 }
 
-.cards {
-    margin: 10px 10px;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+.card-class,
+.frame-content {
+    margin: 3%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
 }
 
-.content {
-    margin: 20px 20px;
+.img-tag {
+    width: 100%;
+    height: 100%;
 }
 
+.content1 {
+    width: 77%;
+}
+
+.card-left {
+    /* width: 90%; */
+    height: 37vh;
+    padding: 10px;
+}
+
+.card-right {
+    height: 37vh;
+}
+
+/* for map  */
 .contact-frame {
-    /* border: 1px; */
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-
-    width: 65wh !important;
-    height: 50vh;
-    margin: auto;
+    width: 75%;
+    height: 33vh;
 }
 
 .frame-content {
-    margin: 2%;
-    margin-top: 50px !important;
-    padding-top: 10px;
-    width: 65wh !important;
-    height: 50vh;
+    height: 30vh;
 }
 
-.content2 {
-    width: 50%;
-}
-
-.inner-card {
-    margin: 15px 15px;
-    border: none;
-}
-
-.title {
+.content1-venue {
+    /* height: 30vh; */
     color: black;
+    margin-bottom: 0px;
 }
 
-.committee-name {
-    color: black;
+.content2-venue {
+    /* height: 30vh; */
+}
+
+.frame-map {
+    width: 90%;
+    height: 100%;
 
 }
 
-.main .cards .inner-card .title1 .title {
-    color: #8080ff;
-    /* font-weight: 500; */
-    font-weight: bold;
-    font-size: 1.1rem;
+@media(max-width:1145px) {
+    .content1 {
+        width: 80%;
+    }
+
+    .card-left>div {
+        font-weight: 490 !important;
+        font-size: 14px;
+    }
+
+    .card-left>.title {
+        font-weight: 500 !important;
+    }
+
+    .card-left {
+        /* width: 90%; */
+        height: 29vh;
+        padding: 7px;
+    }
+
+    .card-right {
+        height: 29vh;
+    }
+
+    /* map  */
+    .contact-frame {
+        width: 83%;
+        height: 33vh;
+    }
+
+    .content1-venue {
+        margin-bottom: 0px;
+        font-size: 15px ! important;
+        font-weight: 470 !important;
+    }
 }
 
-.main .cards .inner-card .title1 .title p {
-    color: #000000;
-    /* font-weight: 500; */
-    font-weight: bold;
-    font-size: 1.3rem;
+@media(max-width:775px) {
+    .content1 {
+        width: 90%;
+    }
+
+    .card-left>div {
+        font-weight: 450 !important;
+        font-size: 12px;
+    }
+
+    .card-left>.title {
+        font-weight: 470 !important;
+    }
+
+    .card-left {
+        height: 25vh;
+        padding: 7px;
+    }
+
+    .card-right {
+        height: 25vh;
+    }
+
+    /* map  */
+    .contact-frame {
+        width: 89%;
+        height: 32vh;
+    }
+
+    .content1-venue {
+        font-size: 13px ! important;
+        font-weight: 480 !important;
+    }
 }
 
-.main .cards .inner-card .title1 .committee-name {
-    color: #000000;
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-@media(max-width: 585px) {
+@media(max-width:549px) {
     .heading {
-        font-size: 0.9rem;
+        width: 80%;
+        font-size: 28px;
     }
 
-    .main .cards .inner-card .title1 .committee-name {
-        color: #000000;
-        font-weight: 500;
-        font-size: 0.7rem;
+    .content1 {
+        width: 95%;
+    }
+
+    .card-left>div {
+        font-weight: 400 !important;
+        font-size: 8px;
+    }
+
+    .card-left {
+        height: 21vh;
+        padding: 7px;
+    }
+
+    .card-right {
+        height: 21vh;
+    }
+
+    /* map  */
+    .contact-frame {
+        width: 95%;
+        height: 27vh;
+        margin-bottom: 30px;
+
+    }
+
+    .frame-content {
+        height: 28vh;
+    }
+
+    .content1-venue {
+        font-size: 11px ! important;
+        font-weight: 460 !important;
     }
 }
 
-@media(max-width: 470px) {
-    .heading {
-        font-size: 0.7rem;
+@media(max-width:345px) {
+    .content1 {
+        width: 99%;
     }
 
-    .main .cards .inner-card .title1 .committee-name {
-        color: #000000;
-        font-weight: 500;
-        font-size: 0.6rem;
+    .card-left>div {
+        font-size: 7px;
+        font-weight: 580 !important;
+
     }
 
-    .main .cards .inner-card .title1 .title p {
-        color: #000000;
-        /* font-weight: 500; */
-        font-weight: bold;
-        font-size: 1.1rem;
+    .card-left {
+        height: 17vh;
+        padding: 9px;
     }
 
-    .main .cards .inner-card .title1 .title {
-        color: #8080ff;
-        /* font-weight: 500; */
-        font-weight: bold;
-        font-size: 0.9rem;
+    .card-right {
+        height: 17vh;
+    }
+
+    /* map  */
+    .contact-frame {
+        height: 26vh;
+    }
+
+    .frame-content {
+        height: 27vh;
+    }
+
+    .content1-venue {
+        font-size: 8px ! important;
+        font-weight: 460 !important;
     }
 }
 
-@media(max-width: 420px) {
-    .heading {
-        font-size: 0.7rem;
+@media(max-width:289px) {
+    .content1 {
+        width: 100%;
     }
 
-    .main .cards .inner-card .title1 .committee-name {
-        color: #000000;
-        font-weight: 500;
-        font-size: 0.6rem;
+    .card-left>div {
+        font-size: 6px;
+        font-weight: 585 !important;
+
     }
 
-    .main .cards .inner-card .title1 .title p {
-        color: #000000;
-        /* font-weight: 500; */
-        font-weight: bold;
-        font-size: 0.9rem;
-    }
-
-    .main .cards .inner-card .title1 .title {
-        color: #8080ff;
-        /* font-weight: 500; */
-        font-weight: bold;
-        font-size: 0.7rem;
-    }
-}
-
-@media(max-width: 388px) {
-    .heading {
-        font-size: 0.6rem;
-    }
-
-    .main .cards .inner-card .title1 .committee-name {
-        color: #000000;
-        font-weight: 500;
-        font-size: 0.5rem;
-    }
-
-    .main .cards .inner-card .title1 .title p {
-        color: #000000;
-        /* font-weight: 500; */
-        font-weight: bold;
-        font-size: 0.7rem;
-    }
-
-    .main .cards .inner-card .title1 .title {
-        color: #8080ff;
-        /* font-weight: 500; */
-        font-weight: bold;
-        font-size: 0.6rem;
-    }
 }
 </style>
-<div class="container contact-info">
+<div class="main my-1">
     <div class="heading text-center my-4">
         <p class="head1">Contact Details</p>
     </div>
+
     <div class="contact-frame">
-        <div class="row frame-content">
-            <div class="content1 col-lg-6">
+        <div class="row frame-content p-2">
+            <div class="content1-venue col-lg-6 col-md-6 col-sm-6 col-6">
                 <p class="clg-details">
                     Government College Of Engineering And Research, Avasari Khurd, Taluka-Amegaon, Pune , Maharashtra,
                     India
@@ -186,199 +260,98 @@
                 <p> Email : nceesd2022@gcoeara.ac.in
                 </p>
             </div>
-            <div class="content2 col-lg-6">
-                <p><iframe width="400px" style="border: 0;" tabindex="0"
+            <div class="content2-venue col-lg-6 col-md-6 col-sm-6 col-6">
+                <p><iframe class="responsive-iframe1 frame-map p-0 m-0"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.7165875222922!2d73.96130341416743!3d18.988119959664854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd311765784c79%3A0xc4f5ab54cf1febbb!2sGovernment%20College%20Of%20Engineering%20And%20Research%2C%20Avasari%20Khurd!5e0!3m2!1sen!2sin!4v1640411369594!5m2!1sen!2sin"
-                        width="750" height="250" frameborder="0" allowfullscreen="allowfullscreen"
-                        aria-hidden="false"></iframe></p>
+                        width="80%" height="100%" frameborder="0"></iframe></p>
             </div>
         </div>
     </div>
-
-    <div class="main container my-4">
-
-        <div class="content">
-
-            <div class="row cards my-4">
-                <div class="col-md-12 card-content">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative inner-card">
-                        <div class="col p-4 d-flex flex-column position-static title1">
-                            <div class="mb-1 my-2 title">Chief Patron: <p>Dr. Abhay Wagh</p>
-                            </div>
-                            <p class="card-text mb-auto committee-name">Director, Directorate of Technical
-                                Education,
-                                Mumbai.</p>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img src="../images/download.jpg" alt="">
-                            <title>Placeholder</title>
-                            </svg>
-                        </div>
-                    </div>
+    <!-- 1 -->
+    <div class="content1 m-1">
+        <div class="row card-class">
+            <div class=" col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9 card-left">
+                <div class="title">FOR GENERAL QUERIES
+                    <p>ORGANIZING SECRETARY</p>
+                </div>
+                <div class="committee-name">
+                    <p>Dr. Chandrashekhar M. Sewatkar<br>Associate Professor, Department of Mechanical
+                        Engineering,<br>Government College of Engineering
+                        and Research Avasari (kh), Taluka Ambegaon,
+                        District: Pune-412405, India.<br>
+                        Email: cmsewatkar.mech@gcoeara.ac.in</p>
                 </div>
 
             </div>
-
-            <div class="row cards my-4">
-                <div class="col-md-12 card-content my-4">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative inner-card">
-                        <div class="col p-4 d-flex flex-column position-static title1">
-                            <div class="mb-1 my-2 title">Patron: <p>Dr. D. V. Jadhao</p>
-                            </div>
-                            <p class="card-text mb-auto committee-name">Joint Director, Regional Office of
-                                Technical Education, Pune.</p>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img src="../images/download.jpg" alt="">
-
-                            <title>Placeholder</title>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
+            <div class=" col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 card-right">
+                <img class="img-responsive img-tag" src="images/Dr.S. U. Ghumare.jpg">
             </div>
-
-            <div class="row cards my-4">
-                <div class="col-md-12 card-content my-4">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative inner-card">
-                        <div class="col p-4 d-flex flex-column position-static title1">
-                            <div class="mb-1 my-2 title">Conference Chair: <p>Dr. D. R. Pangavhane</p>
-                            </div>
-                            <p class="card-text mb-auto committee-name">Principal, Government College
-                                of Engineering and Research Avasari (Kh)
-                            </p>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img src="../images/download.jpg" alt="">
-
-                            <title>Placeholder</title>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row cards my-4">
-                <div class="col-md-12 card-content my-4">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative inner-card">
-                        <div class="col p-4 d-flex flex-column position-static title1">
-                            <div class="mb-1 my-2 title">Convener: <p>Dr. S. A. Sonawane</p>
-                            </div>
-                            <p class="card-text mb-auto committee-name">Dept. of Mechanical Engineering,
-                                Government College of
-                                Engineering and Research Avasari (Kh)
-                            </p>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img src="../images/download.jpg" alt="">
-
-                            <title>Placeholder</title>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row cards my-4">
-                <div class="col-md-12 card-content my-4">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative inner-card">
-                        <div class="col p-4 d-flex flex-column position-static title1">
-                            <div class="mb-1 my-2 title">Organaizing Secretary: <p>Dr. Chandrashekhar M. Sewatkar</p>
-                            </div>
-                            <p class="card-text mb-auto committee-name">Dept. of Mechanical
-                                Engineering, Government College of
-                                Engineering and Research Avasari (Kh)
-
-                            </p>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img src="../images/download.jpg" alt="">
-
-                            <title>Placeholder</title>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row cards my-4">
-                <div class="col-md-12 card-content my-4">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative inner-card">
-                        <div class="col p-4 d-flex flex-column position-static title1">
-                            <div class="mb-1 my-2 title">Joint Organizing Secretary: <p>Dr. S. B. Kharmale</p>
-                            </div>
-                            <p class="card-text mb-auto committee-name">Dept. of Civil Engineering,
-                                Government College of Engineering and Research
-                                Avasari (Kh)
-                            </p>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img src="../images/download.jpg" alt="">
-                            <title>Placeholder</title>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row cards my-4">
-                <div class="col-md-12 card-content my-4">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative inner-card">
-                        <div class="col p-4 d-flex flex-column position-static title1">
-                            <div class="mb-1 my-2 title">Joint Organizing Secretary: <p>Dr. S. V. Karmare</p>
-                            </div>
-                            <p class="card-text mb-auto committee-name">
-                                Dept. of Mechanical Engineering, Government College of Engineering and
-                                Research
-                                Avasari (Kh)
-
-                            </p>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img src="../images/download.jpg" alt="">
-                            <title>Placeholder</title>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row cards my-4">
-                <div class="col-md-12 card-content my-4">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative inner-card">
-                        <div class="col p-4 d-flex flex-column position-static title1">
-                            <div class="mb-1 my-2 title">Treasurer: <p>Dr. S. V. Kshirsagar</p>
-                            </div>
-                            <p class="card-text mb-auto committee-name"> Dept. of Mechanical
-                                Engineering, Government College of Engineering and
-                                Research Avasari (Kh)
-                            </p>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <img src="../images/download.jpg" alt="">
-
-                            <title>Placeholder</title>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
         </div>
     </div>
+    <!-- 2 -->
+    <div class="content1 m-1">
+        <div class="row card-class">
+            <div class=" col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9 card-left">
+                <div class="title">FOR PAPER SUBMISSION
+                    <p>JOINT ORGANIZING SECRETARY</p>
+                </div>
+                <div class="committee-name">
+                    <p>Dr. Swapnil Kharmale<br>
+                        Assistant Professor, Department of Civil Engineering,<br>Government College of Engineering and
+                        Research Avasari (kh), Taluka Ambegaon,
+                        District: Pune-412405, India.<br>
+                        Email: sbkharmale.civil@gcoeara.ac.in</p>
+                </div>
+
+            </div>
+            <div class=" col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 card-right">
+                <img class="img-responsive img-tag" src="images/Dr.S. U. Ghumare.jpg">
+            </div>
+        </div>
+    </div>
+    <!-- 3 -->
+    <div class="content1 m-1">
+        <div class="row card-class">
+            <div class=" col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9 card-left">
+                <div class="title">FOR PAPER SUBMISSION
+                    <p></p>
+                </div>
+                <div class="committee-name">
+                    <p>Dr. S. V. Karmale<br>
+                        Assistant Professor Department of Mechanical Engineering,<br>
+                        Government College of Engineering and Research Avasari (kh), Taluka Ambegaon,
+                        District: Pune-412405, India.<br>
+                        Email: svkarmale.mech@gcoeara.ac.in</p>
+                </div>
+
+            </div>
+            <div class=" col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 card-right">
+                <img class="img-responsive img-tag" src="images/Dr.S. U. Ghumare.jpg">
+            </div>
+        </div>
+    </div>
+    <!-- 4 -->
+    <div class="content1 m-1">
+        <div class="row card-class">
+            <div class=" col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9 card-left">
+                <div class="title">FOR REGISTRATION
+                    <p>TREASURER</p>
+                </div>
+                <div class="committee-name">
+                    <p class="card-text mb-auto ">Dr. S. V. Kshirsagar<br>
+                        Associate Professor Department of Mechanical Engineering,<br>
+                        Government College of Engineering and Research Avasari (kh), Taluka Ambegaon,
+                        District: Pune-412405, India.<br>
+                        Email: svkarmale.mech@gcoeara.ac.in </p>
+                </div>
+
+            </div>
+            <div class=" col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 card-right">
+                <img class="img-responsive img-tag" src="images/Dr.S. U. Ghumare.jpg">
+            </div>
+        </div>
+    </div>
+    <!-- 5 -->
 </div>
+</div>
+<?php include "includes/footer.php"; ?>

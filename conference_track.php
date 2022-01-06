@@ -1,9 +1,9 @@
-<?php include '../index.php'?>
+<?php include 'index.php'?>
 <!-- CSS -->
 <style>
 .conference {
     border-radius: 5px;
-    color: #141452;
+    color: crimson;
 }
 
 .conference_desc {
@@ -17,16 +17,12 @@
 }
 
 .track_title {
-    width: 35%;
-    color: #000000;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    border-radius: 10px;
-    background-color: #f2ccff;
-    margin: 10px 10px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: crimson;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 0px;
     margin: auto;
-    margin-top: 10vh;
+    background-color: #e6e6ff;
+    width: 45%;
 }
 
 .track_title h4 {
@@ -47,38 +43,10 @@
     background: #CCC
 }
 
-.track_title2 {
-    width: 40%;
-    color: #000000;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    border-radius: 10px;
-    background-color: #f2ccff;
-    margin: 10px 10px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    margin: auto;
-    margin-top: 10vh;
-}
-
-.track_title2 h4 {
-    padding: 10px;
-}
-
-.track_title3 {
-    width: 60%;
-    color: #000000;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    border-radius: 10px;
-    background-color: #f2ccff;
-    margin: 10px 10px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    margin: auto;
-    margin-top: 10vh;
-}
-
-.track_title3 h4 {
-    padding: 10px;
+@media(max-width:1020px) {
+    .track_title {
+        width: 70%;
+    }
 }
 </style>
 <!-- conference track -->
@@ -94,7 +62,7 @@
 </div>
 
 <div class="container" style="border-bottom: 2px solid black;">
-    <div class="track_title">
+    <div class="track_title text-center">
         <h4 class="px-4">Track - 01: Energy</h4>
     </div>
     <div class="track_desc my-4 text-center">
@@ -118,7 +86,7 @@
 </div>
 
 <div class="container my-4" style="border-bottom: 2px solid black;">
-    <div class="track_title2">
+    <div class="track_title text-center">
         <h4>Track - 02: Environment</h4>
     </div>
     <div class="track_desc my-4 text-center">
@@ -139,12 +107,12 @@
     </div>
 </div>
 <div class="container my-4" style="border-bottom: 2px solid black;">
-    <div class="track_title3">
+    <div class="track_title text-center">
         <h4>Track - 03: Sustainable Development</h4>
     </div>
     <div class="track_desc my-4 text-center">
         <p>This track would address various recent advances in the development and application of various
-            computational fluid and gas dynamics techniques. The track includes,<br> among others, the following
+            computational fluid and gas dynamics techniques. The track includes, among others, the following
             areas:
 
         </p>
@@ -159,3 +127,4 @@
         <p>• Education and Sustainable Development </p>
     </div>
 </div>
+<?php include "includes/footer.php"; ?>

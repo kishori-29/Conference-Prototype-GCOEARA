@@ -1,83 +1,85 @@
-<?php include '../index.php'; ?>
+<?php include 'index.php'; ?>
 <style>
 .paper_submission {
-    /* border: 2px solid black; */
-    margin-top: 10vh !important;
-    height: 80vh;
+    margin-top: 6vh !important;
 }
 
-.paper_submission .h2 {
+.paper-sub {
+    font-size: 25px !important;
+}
+
+.text-effect {
     color: crimson;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding: 7px;
     background-color: #e6e6ff;
-
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .submission-content {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     padding: 30px;
-
-}
-
-.paper_submission p {
     font-weight: 500;
 
-}
-
-.paper_submission2 {
-    /* border: 2px solid black; */
-    margin-top: 20vh !important;
-    /* height: 80vh; */
-}
-
-.paper_submission2 .h4 {
-    color: crimson;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    padding: 5px;
-    background-color: #e6e6ff;
-    width: 40%;
-    /* margin-top: 100px; */
 
 }
 
+.paper_submission2,
 .paper_submission3 {
-    /* border: 2px solid black; */
-    margin-top: 10vh !important;
-    /* height: 80vh; */
-}
-
-.paper_submission3 .h6 {
-    color: crimson;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    padding: 5px;
-    background-color: #e6e6ff;
     width: 40%;
-    /* margin-top: 100px; */
+    margin-top: 4vh !important;
 
 }
 
 .paper_submission4 {
-    /* border: 2px solid black; */
-    margin-top: 10vh !important;
-    /* height: 80vh; */
+    margin-top: 4vh !important;
+    width: 80%;
 }
 
-.paper_submission4 .h6 {
-    color: crimson;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    padding: 5px;
-    background-color: #e6e6ff;
-    width: 80%;
-    /* margin-top: 100px; */
+@media(max-width:1000px) {
+    .paper_submission4 {
+        width: 99%;
+    }
 
+    .paper_submission2 {
+        width: 49%;
+    }
+
+    .paper_submission3 {
+        width: 40%;
+    }
+
+    .submission-content {
+        padding-left: 10px;
+    }
+}
+
+@media(max-width:470px) {
+    .paper_submission2 {
+        width: 99%;
+    }
+
+    .paper_submission3 {
+        width: 60%;
+    }
+
+    .submission-content {
+        padding-left: 10px;
+        font-size: 13px;
+    }
+
+    .text-effect {
+        font-size: 15px;
+
+    }
 }
 </style>
 
 <!-- Full Paper Submsssion -->
 <div class="container paper_submission">
-    <div class="h2">
-        <h2 class="text-center">Full Paper Submission</h2>
+    <div class="">
+        <h1 class="text-center text-effect paper-sub">Full Paper Submission</h1>
     </div>
     <div class="container submission-content my-4">
         <p>• The maximum page limit for full paper - 6 pages.</p>
@@ -91,82 +93,91 @@
     </div>
 </div>
 
-
-<div class="container paper_submission2">
-    <div class="h4">
-        <h4 class="text-center">Paper Submission Link</h4>
+<div class="container">
+    <div class="">
+        <p class="text-center  text-effect paper_submission2">Paper Submission Link</p>
     </div>
     <div class="container submission-content my-4">
         <p>• The maximum page limit for full paper - 6 pages.</p>
     </div>
 </div>
 
-<div class="container paper_submission3">
-    <div class="h6">
-        <h5 class="text-center">Paper Template</h5>
+<div class="container ">
+    <div class="">
+        <p class="text-center  text-effect paper_submission3">Paper Template</p>
     </div>
     <div class="container submission-content my-4">
         <h6 class="text-bold">MS Word Format:</h6>
-        <h6>FMFP2021_Template Word<a href="../Request.docx" download="true"><span
-                    class="badge badge-secondary mx-2">download </span></a></h6>
-        <h6>FMFP2021_Template PDF<a href="../First-announcement.pdf" download="true"><span
-                    class="badge badge-secondary mx-2">download </span></a></h6>
+        <p>FMFP2021_Template PDF<a href="error_snehal.txt" download="true"><span
+                    class="badge bg-secondary mx-2">Download</span></a>
+        </p>
+        <p>FMFP2021_Template PDF1<a href="error_snehal.txt" download="true"><span
+                    class="badge bg-secondary mx-2">Download</span></a>
+        </p>
+
 
     </div>
 </div>
 
-<div class="container paper_submission3">
-    <div class="h6">
-        <h5 class="text-center">Paper Template</h5>
+<div class="container ">
+    <div class="">
+        <p class="text-center text-effect paper_submission3">Paper Template</p>
     </div>
     <div class="container submission-content my-4">
         <h6>PLAGAIRISM REPORT:</h6>
-        <h5>Plagiarism-Report<span class="badge badge-secondary mx-2"> download</span></h5>
-
+        <p>Plagiarism Report<a href="error_snehal.txt" download="true"><span
+                    class="badge bg-secondary mx-2">Download</span></a></p>
     </div>
 </div>
 
-<div class="container paper_submission3">
-    <div class="h6">
-        <h5 class="text-center">TRACK ID:</h5>
+<div class="container">
+    <div class="">
+        <p class="text-center text-effect paper_submission3">TRACK ID:</p>
     </div>
     <div class="container submission-content my-4">
-        <h5>Track-ID_FMFP-2021<span class="badge badge-secondary mx-2"> download</span></h5>
+        <p>Track-ID_FMFP-2021<a href="error_snehal.txt" download="true"><span
+                    class="badge bg-secondary mx-2">Download</span></a></p>
 
     </div>
 </div>
 
-<div class="container paper_submission4">
-    <div class="h6">
-        <h6 class="text-center">GOOGLE FORM LINK FOR REVISED MANUSCRIPT AND REBUTTAL SUBMISSION</h6>
+<div class="container">
+    <div class="">
+        <p class="text-center text-effect paper_submission4">GOOGLE FORM LINK FOR REVISED MANUSCRIPT AND REBUTTAL
+            SUBMISSION</p>
     </div>
     <div class="container submission-content my-4">
-        <h5>https://forms.gle/Yt4gh2hqsWa5hBrF</h5>
+        <p class="sub-4">https://forms.gle/Yt4gh2hqsWa5hBrF</p>
     </div>
 </div>
 
-<div class="container paper_submission4">
-    <div class="h6">
-        <h6 class="text-center">LIST OF ACCEPTED MANUSCRIPTS FOR ORAL PRESENTATION</h6>
+<div class="container ">
+    <div class="">
+        <p class="text-center text-effect paper_submission4">LIST OF ACCEPTED MANUSCRIPTS FOR ORAL PRESENTATION</p>
     </div>
     <div class="container submission-content my-4">
-        <h5>FMFP2021_Accepted-Manuscripts-1<span class="badge badge-secondary mx-2"> download</span></h5>
+        <p>FMFP2021_Accepted-Manuscripts-1<a href="error_snehal.txt" download="true"><span
+                    class="badge bg-secondary mx-2">Download</span></a></p>
     </div>
 </div>
 
-<div class="container paper_submission4">
-    <div class="h6">
-        <h6 class="text-center">FORMAT OF POWERPOINT PRESENTATION</h6>
+<div class="container ">
+    <div class="">
+        <p class="text-center text-effect paper_submission4">FORMAT OF POWERPOINT PRESENTATION</p>
     </div>
     <div class="container submission-content my-4">
-        <h5>FMFP2021_PPT-FORMAT<span class="badge badge-secondary mx-2">download</span></h5>
+        <p>FMFP2021_PPT-FORMAT<a href="error_snehal.txt" download="true"><span
+                    class="badge bg-secondary mx-2">Download</span></a></p>
     </div>
 </div>
-
 
 <div class="container disclaimer my-4">
     <p style="border-bottom: 1px solid red;">Disclaimer:</p>
-    <h6>Your contact will be passed to sponsors and your partners to contact you as a follow-up from your attendance at
-        the conference.</h6>
-    <h6>Use of your contact data is governed by the sponsors and partners for a privacy policy.</h6>
+    <p>Your contact will be passed to sponsors and your partners to contact you as a follow-up from your attendance at
+        the conference.</p>
+    <p>Use of your contact data is governed by the sponsors and partners for a privacy policy.</p>
 </div>
+
+<?php 
+ include "includes/footer.php";
+?>

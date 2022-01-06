@@ -1,10 +1,5 @@
 body,
-p,
-h1,
-h2,
-h3,
-h4,
-h5 {
+p {
     font-family: "Roboto", sans-serif;
     color: black;
 }
@@ -13,6 +8,8 @@ h5 {
 
 a:hover {
     text-decoration: none;
+    text-shadow: -.25px -.25px 0 black, 
+    .25px .25px black;
 }
 
 ul li a {
@@ -21,6 +18,10 @@ ul li a {
 
 a {
     color: black;
+    text-decoration: none;
+    text-shadow: -.25px -.25px 0 transparent, 
+                  .25px .25px transparent;
+    margin: 0 4px;
 }
 
 p {
@@ -32,84 +33,6 @@ p {
 img {
     max-width: 100%;
 }
-
-h1 {
-    font-size: 40px;
-    font-weight: 300;
-    line-height: 1;
-    margin-bottom: 15px;
-    color: #2d56a0;
-}
-
-h2 {
-    font-size: 35px;
-    font-weight: 300;
-    line-height: 1.2;
-    margin-bottom: 15px;
-    color: #2d56a0;
-    margin-top: 40px;
-}
-
-h3 {
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 1.2;
-    margin-bottom: 15px;
-    color: #2d56a0;
-    margin-top: 40px;
-}
-
-h4 {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-h5 {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-h6 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-/*back to top*/
-
-#back-to-top {
-    position: fixed;
-    bottom: 2em;
-    right: 0;
-    z-index: 99999999;
-    width: 50px;
-    margin-right: 10px;
-    height: 48px;
-    animation: rotate 10.5s;
-    text-align: center;
-    line-height: 50px;
-    background: #07373c;
-    color: #fff;
-    cursor: pointer;
-    border: 0;
-    border-radius: 0;
-    text-decoration: none;
-    transition: all 0.5s linear;
-    opacity: 0;
-}
-
-.show {
-    display: block !important;
-}
-
-#back-to-top.show {
-    opacity: 1;
-    right: 0;
-}
-
-
 
 /*footer*/
 
@@ -129,7 +52,7 @@ footer {
 
 .forcontiner-bg {
     padding: 20px 20px;
-    background: #2d56a0;
+    background: #131212;
     color: #999999;
     text-align: center;
 }
@@ -137,7 +60,7 @@ footer {
 .footer-bottom-design {
     color: #993;
     font-size: 13px;
-    color: #81bfc4;
+    color: #888C8D;
 }
 
 .footer-bottom-text {
@@ -160,7 +83,7 @@ footer {
     font-size: 14px;
 
     padding: 5px 0;
-    color: #330096;
+    color: #0a0a0a;
 }
 
 .footer-nav-2 {
@@ -180,36 +103,7 @@ footer {
     padding-left: 15px;
 }
 
-:root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-}
+
 
 .wrapbox { width: 20em; margin: 0.5em; white-space: normal; vertical-align: top; display: inline-block; }
 .auto { line-break: auto; padding-left: 3em; }

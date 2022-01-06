@@ -1,4 +1,4 @@
-<?php include "../index.php"; ?>
+<?php include "index.php"; ?>
 <style>
 .heading {
     color: black;
@@ -163,7 +163,7 @@
                         <p class="card-text mb-auto committee-name">Director, College of Engineering Pune.</p>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="../images/download.jpg" alt="">
+                        <img src="images/Dr.S. U. Ghumare.jpg" alt="">
                         <title>Placeholder</title>
                         </svg>
                     </div>
@@ -183,7 +183,7 @@
                             Pune.</p>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="../images/download.jpg" alt="">
+                        <img src="images/Dr.S. U. Ghumare.jpg" alt="">
 
                         <title>Placeholder</title>
                         </svg>
@@ -206,7 +206,7 @@
                         </p>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="../images/download.jpg" alt="">
+                        <img src="images/Dr.S. U. Ghumare.jpg" alt="">
 
                         <title>Placeholder</title>
                         </svg>
@@ -229,7 +229,7 @@
                         </p>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="../images/download.jpg" alt="">
+                        <img src="images/Dr.S. U. Ghumare.jpg" alt="">
 
                         <title>Placeholder</title>
                         </svg>
@@ -252,7 +252,7 @@
                         </p>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="../images/download.jpg" alt="">
+                        <img src="images/Dr.S. U. Ghumare.jpg" alt="">
 
                         <title>Placeholder</title>
                         </svg>
@@ -274,7 +274,7 @@
                         </p>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="../images/download.jpg" alt="">
+                        <img src="images/Dr.S. U. Ghumare.jpg" alt="">
                         <title>Placeholder</title>
                         </svg>
                     </div>
