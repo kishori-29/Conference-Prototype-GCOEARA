@@ -20,8 +20,15 @@
     color: crimson;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding: 0px;
+    color: white;
+    text-shadow:
+        0.06em 0.07em 0 rgb(55, 56, 4),
+        0.09em 0.08em 0 rgb(173, 200, 30),
+        0.08em 0.09em 0 rgb(100, 70, 200);
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    border-radius: 10px;
     margin: auto;
-    background-color: #e6e6ff;
     width: 45%;
 }
 

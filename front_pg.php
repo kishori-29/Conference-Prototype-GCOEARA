@@ -9,10 +9,17 @@
 }
 
 .text-effect {
-    color: crimson;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding: 7px;
-    background-color: #e6e6ff;
+    color: white;
+    text-shadow:
+        0.06em 0.07em 0 rgb(55, 56, 4),
+        0.09em 0.08em 0 rgb(173, 200, 30),
+        0.08em 0.09em 0 rgb(100, 70, 200);
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    border-radius: 10px;
+    margin: auto;
     font-size: 20px;
     font-weight: 600;
 }
@@ -27,27 +34,27 @@
 
 .paper_submission2,
 .paper_submission3 {
-    width: 40%;
+    width: 45%;
     margin-top: 4vh !important;
 
 }
 
 .paper_submission4 {
     margin-top: 4vh !important;
-    width: 80%;
+    width: 75%;
 }
 
-@media(max-width:1000px) {
+@media(max-width:760px) {
     .paper_submission4 {
-        width: 99%;
+        width: 80%;
     }
 
     .paper_submission2 {
-        width: 49%;
+        width: 85%;
     }
 
     .paper_submission3 {
-        width: 40%;
+        width: 50%;
     }
 
     .submission-content {
@@ -56,21 +63,13 @@
 }
 
 @media(max-width:470px) {
-    .paper_submission2 {
-        width: 99%;
-    }
-
-    .paper_submission3 {
-        width: 60%;
-    }
-
     .submission-content {
         padding-left: 10px;
         font-size: 13px;
     }
 
     .text-effect {
-        font-size: 15px;
+        font-size: 13px;
 
     }
 }
@@ -98,7 +97,8 @@
         <p class="text-center  text-effect paper_submission2">Paper Submission Link</p>
     </div>
     <div class="container submission-content my-4">
-        <p>• The maximum page limit for full paper - 6 pages.</p>
+        <a style="color:blue;" href="https://easychair.org/conferences/?conf=nceesd2022"
+            target="_blank">https://easychair.org/conferences/?conf=nceesd2022</a>
     </div>
 </div>
 

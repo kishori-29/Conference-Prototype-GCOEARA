@@ -36,7 +36,7 @@
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding: 5px;
     background-color: #e6e6ff;
-    width: 40%;
+    width: 90%;
     /* margin-top: 100px; */
 
 }
@@ -52,7 +52,7 @@
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding: 5px;
     background-color: #e6e6ff;
-    width: 40%;
+    width: 90%;
     /* margin-top: 100px; */
 
 }
@@ -68,7 +68,7 @@
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding: 5px;
     background-color: #e6e6ff;
-    width: 80%;
+    width: 90%;
     /* margin-top: 100px; */
 
 }

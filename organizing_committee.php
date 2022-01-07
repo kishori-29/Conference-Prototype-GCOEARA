@@ -1,5 +1,5 @@
 <?php include "index.php"; ?>
-<link rel="stylesheet" href="css/committee.css">
+<link rel="stylesheet" href="css/committee_css.css">
 
 <div class="main my-1">
     <div class="heading text-center my-4">

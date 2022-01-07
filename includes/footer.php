@@ -2,33 +2,34 @@
 <style>
 .footer-cls {
     font-family: "Roboto", sans-serif;
-    color: black;
-    background: #e4e4e4;
+    color: lightgray !important;
+    background: #303069;
     overflow: hidden;
 
 }
 
-.footer-cls>a:hover {
+.footer-cls a:hover {
     text-decoration: none;
+    color: yellow;
     text-shadow: -.25px -.25px 0 black,
         .25px .25px black;
 }
 
-.row>a {
-    color: black;
+.row-class a {
+    color: lightgray;
     text-decoration: none;
     text-shadow: -.25px -.25px 0 transparent,
         .25px .25px transparent;
     margin: 0 4px;
 }
 
-.row-cls p {
+.row-class p {
     line-height: 1.4;
-    color: black;
+    color: blue !important;
     font-size: 1.1em;
 }
 
-.footer-cls>img {
+.footer-class>img {
     max-width: 100%;
     width: 100%;
     height: 100%;
@@ -39,7 +40,7 @@
 .footer-menu-heading {
     font-size: 18px;
     font-weight: 700;
-    color: #333;
+    color: white;
     border-left: 4px solid #df8b3a;
     line-height: 20px;
     padding: 0px 0 0 10px;
@@ -101,7 +102,7 @@ a {
 <footer class="footer-cls">
     <div class="container">
         <hr>
-        <div class="row footer-sec row-cls">
+        <div class="row footer-sec row-class">
             <div class="col-md-4  col-sm-6 col-xl-4 col-lg-4 col-6">
                 <div class="footer-menu-heading">Useful links</div>
                 <ul id="menu-footer-menu" class="nav navbar-nav">
@@ -131,7 +132,7 @@ a {
             <div class="col-md-4  col-sm-6 col-xl-4 col-lg-4 col-6">
                 <div class="footer-menu-heading">Contact us</div>
                 <div class="footer-nav-2">
-                    <p><a href="mailtp:fmfp2021@pilani.bits-pilani.ac.in">fmfp2021@pilani.bits-pilani.ac.in </a></p>
+                    <p><a href="mailtp:fmfp2021@pilani.bits-pilani.ac.in">nceesd2022@gcoeara.ac.in</a></p>
                 </div>
             </div>
 
@@ -152,8 +153,8 @@ a {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="footer-bottom-text">International Conference on Fluid Mechanics and Fluid Power (FMFP
-                        -2021)<div>
+                    <div class="footer-bottom-text">National Conference on Energy and Environment for Sustainable
+                        Development( NCEESD- 2022)<div>
                             <div class="footer-bottom-design">Designed and Developed by : ERC</div>
 
                         </div>
